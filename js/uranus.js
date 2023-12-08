@@ -22,7 +22,7 @@ scene.add( uranus );
 
 function animate() {
 	requestAnimationFrame( animate );
-	uranus.rotation.y += 0.01;
+	uranus.rotation.y += 0.02;
 
 	renderer.render( scene, camera );
 }

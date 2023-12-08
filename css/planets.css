@@ -86,7 +86,7 @@ aside {
     position: absolute;
     right: 0;
     margin: 2.7rem 4rem;
-    z-index: 1;
+    z-index: 2;
     opacity: 0.6;
 }
 

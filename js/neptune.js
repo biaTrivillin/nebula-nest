@@ -22,7 +22,7 @@ scene.add( neptune );
 
 function animate() {
 	requestAnimationFrame( animate );
-	neptune.rotation.y += 0.01;
+	neptune.rotation.y += 0.025;
 
 	renderer.render( scene, camera );
 }

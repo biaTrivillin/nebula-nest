@@ -22,7 +22,7 @@ scene.add( saturn );
 
 function animate() {
 	requestAnimationFrame( animate );
-	saturn.rotation.y += 0.01;
+	saturn.rotation.y += 0.03;
 
 	renderer.render( scene, camera );
 }

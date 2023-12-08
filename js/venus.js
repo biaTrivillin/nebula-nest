@@ -22,7 +22,7 @@ scene.add( venus );
 
 function animate() {
 	requestAnimationFrame( animate );
-	venus.rotation.y += 0.01;
+	venus.rotation.y += 0.002;
 
 	renderer.render( scene, camera );
 }

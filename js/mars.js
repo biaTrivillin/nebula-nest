@@ -22,7 +22,7 @@ scene.add( mars );
 
 function animate() {
 	requestAnimationFrame( animate );
-	mars.rotation.y += 0.01;
+	mars.rotation.y += 0.009;
 
 	renderer.render( scene, camera );
 }

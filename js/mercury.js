@@ -22,7 +22,7 @@ scene.add( mercury );
 
 function animate() {
 	requestAnimationFrame( animate );
-	mercury.rotation.y += 0.01;
+	mercury.rotation.y += 0.005;
 
 	renderer.render( scene, camera );
 }

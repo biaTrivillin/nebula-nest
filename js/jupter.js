@@ -22,7 +22,7 @@ scene.add( jupter );
 
 function animate() {
 	requestAnimationFrame( animate );
-	jupter.rotation.y += 0.01;
+	jupter.rotation.y += 0.04;
 
 	renderer.render( scene, camera );
 }
