@@ -53,15 +53,21 @@ body {
 .title {
     font-family: var(--font-title);
     font-size: 9rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .text {
     font-family: var(--font-text);
     font-size: 2.3rem;
     text-align: justify;
+    text-shadow: black 0.2em 0.2em 0.2em;
 }
 
 .grey__text{
+    color: #88898C;
+}
+
+#nasa__link {
     color: #88898C;
 }
 
@@ -79,12 +85,13 @@ body {
     background-color: #88898C;
     opacity: 0;
     animation: get-big 1s 1 1s forwards;
+    box-shadow: 0.2em 0.2em 0.2em #000;
 }
 
 .btn:hover{
     box-shadow:
-        0 0 100px 1px #f0f, /* middle magenta */
-        0 0 140px 2px #0ff; /* outer cyan */
+        0 0 100px 1px #f0f, 
+        0 0 140px 2px #0ff;
     font-size: 2.4rem;
 }
 
