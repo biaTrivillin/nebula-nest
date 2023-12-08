@@ -10,15 +10,16 @@ camera.position.z = 120;
 
 scene.background = new THREE.TextureLoader().load( "../assets/background.jpg" );
 
-const sunGeometry = new THREE.SphereGeometry( 40 );
+const sunGeometry = new THREE.SphereGeometry( 65 );
 const sunTexture = new THREE.TextureLoader().load('../public/earth-texture.jpg')
 const sunMaterial = new THREE.MeshBasicMaterial( { map: sunTexture } );
 const sun = new THREE.Mesh( sunGeometry, sunMaterial );
+sun.position.x = -110
+sun.position.y = -5
+sun.position.z = -45
 
 const solarSystem = new THREE.Group();
 
-// camera.lookAt( 0, 0, 0 );
-// sun.position.y = 2
 solarSystem.add(sun)
 scene.add( solarSystem );
 
