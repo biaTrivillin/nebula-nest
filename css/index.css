@@ -1,3 +1,5 @@
+/* --------------------- GLOBAL --------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
 @import url(./animations.css);
 
@@ -14,6 +16,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 62.5%;
+    --font-title: 'Nasalization';
+    --font-text: 'Strait', sans-serif;
+}
+
 body {
     width: 100vw;
     min-height: 100vh;
@@ -23,22 +31,23 @@ body {
     background-size: cover;
 }
 
-
-:root {
-    font-size: 62.5%;
-    --font-title: 'Nasalization';
-    --font-text: 'Strait', sans-serif;
-}
-
 #content {
     display: grid;
     grid-template-columns: 60% 40%;
     position: relative;
 }
 
-#astronaut__img{
-    width: 21rem;
-    transform: scaleX(-1);
+/* --------------------- TEXT CONTENT --------------------- */
+
+.content__container {
+    padding-left: 15rem;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    animation: appear 2s ease-in-out 1 forwards;
 }
 
 .title {
@@ -52,16 +61,11 @@ body {
     text-align: justify;
 }
 
-.content__container {
-    padding-left: 15rem;
-    justify-self: center;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 2rem;
-    animation: appear 2s ease-in-out 1 forwards;
+.grey__text{
+    color: #88898C;
 }
+
+/* --------------------- BTN --------------------- */
 
 .btn {
     width: 10rem;
@@ -84,8 +88,15 @@ body {
     font-size: 2.4rem;
 }
 
-.grey__text{
-    color: #88898C;
+.btn:active {
+    font-size: 2.6rem;
+}
+
+/* --------------------- IMAGE --------------------- */
+
+#astronaut__img{
+    width: 21rem;
+    transform: scaleX(-1);
 }
 
 .image__content {
