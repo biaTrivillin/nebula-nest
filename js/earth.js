@@ -10,26 +10,19 @@ camera.position.z = 120;
 
 scene.background = new THREE.TextureLoader().load( "../assets/background.jpg" );
 
-const sunGeometry = new THREE.SphereGeometry( 65 );
-const sunTexture = new THREE.TextureLoader().load('../public/earth-texture.jpg')
-const sunMaterial = new THREE.MeshBasicMaterial( { map: sunTexture } );
-const sun = new THREE.Mesh( sunGeometry, sunMaterial );
-sun.position.x = -110
-sun.position.y = -5
-sun.position.z = -45
+const earthGeometry = new THREE.SphereGeometry( 65 );
+const earthTexture = new THREE.TextureLoader().load('../public/earth-texture.jpg')
+const earthMaterial = new THREE.MeshBasicMaterial( { map: earthTexture } );
+const earth = new THREE.Mesh( earthGeometry, earthMaterial );
+earth.position.x = -110
+earth.position.y = -5
+earth.position.z = -45
 
-const solarSystem = new THREE.Group();
-
-solarSystem.add(sun)
-scene.add( solarSystem );
-
-
+scene.add( earth );
 
 function animate() {
 	requestAnimationFrame( animate );
-
-
-	sun.rotation.y += 0.01;
+	earth.rotation.y += 0.01;
 
 	renderer.render( scene, camera );
 }
