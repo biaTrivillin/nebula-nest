@@ -1,0 +1,41 @@
+@keyframes is-moving {
+    from {
+        transform: translateX(10px);
+    }
+
+    to{
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes is-comming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes get-big {
+    from {
+        opacity: 1;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
