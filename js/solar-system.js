@@ -58,9 +58,17 @@ const neptuneMaterial = new THREE.MeshBasicMaterial( { map: neptuneTexture } );
 const neptune = new THREE.Mesh( neptuneGeometry, neptuneMaterial );
 neptune.position.x = 290
 
+const ringTexture = new THREE.TextureLoader().load('../public/ring-texture.jpg')
+const saturnRingGeometry = new THREE.RingGeometry( 40, 50, 32 ); 
+const ringMaterial = new THREE.MeshBasicMaterial( { map: ringTexture, side: THREE.DoubleSide } );
+const ring = new THREE.Mesh( saturnRingGeometry, ringMaterial );
+ring.rotation.x = -20
+ring.rotation.y = -4
+ring.position.x = 103
+
 const solarSystem = new THREE.Group();
 
-solarSystem.add(earth, mercury, jupter, uranus, saturn, neptune, venus, mars)
+solarSystem.add(earth, mercury, jupter, uranus, saturn, neptune, venus, mars, ring)
 
 scene.add( solarSystem );
 

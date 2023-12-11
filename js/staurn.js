@@ -18,7 +18,18 @@ saturn.position.x = -110
 saturn.position.y = -5
 saturn.position.z = -45
 
-scene.add( saturn );
+
+const ringTexture = new THREE.TextureLoader().load('../public/ring-texture.jpg')
+const saturnRingGeometry = new THREE.RingGeometry( 65, 80, 32 ); 
+const ringMaterial = new THREE.MeshBasicMaterial( { map: ringTexture, side: THREE.DoubleSide } );
+const ring = new THREE.Mesh( saturnRingGeometry, ringMaterial );
+ring.rotation.x = -20
+ring.rotation.y = -4
+ring.position.x = -99
+ring.position.z = -30
+
+
+scene.add( saturn, ring );
 
 function animate() {
 	requestAnimationFrame( animate );
