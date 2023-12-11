@@ -5,6 +5,7 @@
 >And all the information provided originates from the official [NASA website](https://science.nasa.gov/solar-system/).
 
 ## Preview
+ <img src="assets/nebula-nest.gif" width="700px">
 
 ## Planetary Features 👩🏼‍🚀
 - Sidebar menu displayed on hover, allowing the selection of the highlighted planet on the screen.
