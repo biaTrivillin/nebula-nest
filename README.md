@@ -7,10 +7,10 @@
 ## Preview
 
 ## Planetary Features 👩🏼‍🚀
-Sidebar menu displayed on hover, allowing the selection of the highlighted planet on the screen.
-Comprehensive visualization of the main planets of the solar system, enabling the comparison of sizes and rotation speeds.
-Detailed individual visualization of each planet.
-CSS animations that make the page more visually pleasing.
+- Sidebar menu displayed on hover, allowing the selection of the highlighted planet on the screen.
+- Comprehensive visualization of the main planets of the solar system, enabling the comparison of sizes and rotation speeds.
+- Detailed individual visualization of each planet.
+- CSS animations that make the page more visually pleasing.
 
 ## Stacks used
 <div align="left">
