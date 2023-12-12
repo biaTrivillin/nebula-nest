@@ -24,6 +24,11 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
 </div>
 
+## Installing dependencies 
+```bash
+  npm install
+```
+
 ## Running the application
 ```bash
   npm run dev
